@@ -1,0 +1,13 @@
+<div>
+  <h2 class="artists-title">Popular artists</h2>
+  <div class="artists-handler">
+    <div class="artist-container" *ngFor="let artist of artists">
+      <img src="{{ artist.image }}" alt="artis-photo" class="artist-photo" />
+      <div class="overlay">
+        <mat-icon fontIcon="play_circle"></mat-icon>
+      </div>
+      <p class="artist-name">{{ artist.name }}</p>
+      <p class="artist-name-sub">Artist</p>
+    </div>
+  </div>
+</div>

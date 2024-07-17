@@ -1,0 +1,63 @@
+.albums-title {
+  margin: 50px 0px 10px 20px;
+  color: #ffffff;
+}
+
+.albums-handler {
+  display: flex;
+}
+
+.album-container {
+  position: relative;
+  justify-content: start;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.album-container:hover {
+  background: #1b1b1b;
+}
+
+.album-photo {
+  width: 205px;
+  height: 205px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.album-name {
+  color: #ffffff;
+  margin: 0px 0px 5px 0px;
+}
+
+.album-artist {
+  color: #afafaf;
+  margin: 5px 0px 0px 0px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.overlay mat-icon {
+  color: rgb(29, 185, 84, 0);
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transition: 0.2s ease;
+}
+
+.album-container:hover .overlay {
+  height: 100%;
+}
+
+.album-container:hover .overlay mat-icon {
+  color: rgb(29, 185, 84, 100);
+}

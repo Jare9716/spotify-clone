@@ -1,0 +1,38 @@
+.navigation-card-container {
+  display: flex;
+  background: #131313;
+  border-radius: 8px;
+  width: 22vw;
+  align-items: start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navigation-handler {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+.navigation-handler a {
+  display: flex;
+  margin-top: 20px;
+  color: #dedede;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.navigation-handler a:hover {
+  color: #ffffff;
+}
+
+.navigation-handler mat-icon {
+  margin-right: 10px;
+}
+
+.logoBW {
+  width: 90px;
+}

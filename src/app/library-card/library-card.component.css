@@ -1,0 +1,51 @@
+.library-card-container {
+  display: flex;
+  background: #131313;
+  border-radius: 8px;
+  width: 22vw;
+  align-items: start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.library-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.library-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+}
+
+.library-title p {
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.add-library-button {
+  background: rgb(19, 19, 19, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.add-library-button mat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  color: #dadada;
+}
+
+.add-library-button mat-icon:hover {
+  color: #ffffff;
+  background: #232323;
+}

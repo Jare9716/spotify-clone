@@ -1,0 +1,74 @@
+.main-card-container {
+  background: #131313;
+  border-radius: 8px;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 10px;
+  overflow-y: auto;
+  scrollbar-color: #444444 #131313;
+}
+
+.artists-title {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.artist-handler {
+  display: flex;
+}
+
+.artists-container {
+  position: relative;
+  justify-content: start;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.artists-container:hover {
+  background: linear-gradient(180deg, #00000000, #1b1b1b);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.overlay mat-icon {
+  color: rgb(29, 185, 84, 0);
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transition: 0.2s ease;
+}
+
+.artists-container:hover .overlay {
+  height: 100%;
+}
+
+.artists-container:hover .overlay mat-icon {
+  color: rgb(29, 185, 84, 100);
+}
+
+.artist-photo {
+  object-fit: cover;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.artist-name {
+  color: #ffffff;
+  margin: 0px 0px 5px 0px;
+}
+
+.artist-name-sub {
+  color: #afafaf;
+  margin: 5px 0px 0px 0px;
+}
