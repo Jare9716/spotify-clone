@@ -1,0 +1,24 @@
+<div class="tracks-card-container">
+  <div class="tracks-card-header">
+    <div class="tracks-card-header-title-container">
+      <mat-icon fontIcon="tag"></mat-icon>
+      <p>Title</p>
+    </div>
+    <mat-icon fontIcon="schedule"></mat-icon>
+  </div>
+  <div class="tracks-card-handler" *ngFor="let track of tracks">
+    <div class="track-title-container">
+      <div class="track-title">
+        <div class="track-number-icon-handler">
+          <p class="track-number">{{ track.track_number }}</p>
+          <mat-icon fontIcon="play_arrow"></mat-icon>
+        </div>
+        <div class="track-name-artist-handler">
+          <a class="track-name">{{ track.name }}</a>
+          <a class="track-artist">{{ track.artists[0].name }}</a>
+        </div>
+      </div>
+    </div>
+    <p class="track-duration">{{ track.duration_ms | msToMin }}</p>
+  </div>
+</div>

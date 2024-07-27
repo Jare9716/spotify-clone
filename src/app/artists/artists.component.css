@@ -1,5 +1,10 @@
+.artists-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .artists-title {
-  margin: 20px 0px 10px 20px;
+  margin: 50px 0px 10px 10px;
   color: #ffffff;
 }
 
@@ -10,7 +15,6 @@
 .artist-container {
   position: relative;
   justify-content: start;
-  margin: 10px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -20,35 +24,10 @@
   background: linear-gradient(180deg, #00000000, #1b1b1b);
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0px;
-  height: 0;
-  width: 100%;
-  overflow: hidden;
-  transition: 0.5s ease;
-}
-
-.overlay mat-icon {
-  color: rgb(29, 185, 84, 0);
-  position: absolute;
-  top: 80%;
-  left: 80%;
-  transition: 0.2s ease;
-}
-
-.artist-container:hover .overlay {
-  height: 100%;
-}
-
-.artist-container:hover .overlay mat-icon {
-  color: rgb(29, 185, 84, 100);
-}
-
 .artist-photo {
   object-fit: cover;
-  width: 205px;
-  height: 205px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -61,4 +40,37 @@
 .artist-name-sub {
   color: #afafaf;
   margin: 5px 0px 0px 0px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60%;
+  left: 68%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #13131300;
+  background-color: #1db95400;
+  transition: 0.2s ease-in-out;
+}
+
+.artist-container:hover .overlay {
+  height: 100%;
+}
+
+.artist-container:hover .icon-container {
+  color: #131313;
+  background-color: #1db954;
 }

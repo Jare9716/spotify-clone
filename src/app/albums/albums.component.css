@@ -1,5 +1,10 @@
+.albums-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .albums-title {
-  margin: 50px 0px 10px 20px;
+  margin: 50px 0px 10px 10px;
   color: #ffffff;
 }
 
@@ -10,7 +15,6 @@
 .album-container {
   position: relative;
   justify-content: start;
-  margin: 10px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -21,8 +25,8 @@
 }
 
 .album-photo {
-  width: 205px;
-  height: 205px;
+  width: 220px;
+  height: 220px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -43,14 +47,21 @@
   height: 0;
   width: 100%;
   overflow: hidden;
-  transition: 0.5s ease;
+  transition: 0.5s;
 }
 
-.overlay mat-icon {
-  color: rgb(29, 185, 84, 0);
+.icon-container {
   position: absolute;
-  top: 80%;
-  left: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60%;
+  left: 68%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #13131300;
+  background-color: #1db95400;
   transition: 0.2s ease;
 }
 
@@ -58,6 +69,7 @@
   height: 100%;
 }
 
-.album-container:hover .overlay mat-icon {
-  color: rgb(29, 185, 84, 100);
+.album-container:hover .icon-container {
+  color: #131313;
+  background-color: #1db954;
 }

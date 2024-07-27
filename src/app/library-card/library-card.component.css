@@ -4,8 +4,7 @@
   border-radius: 8px;
   width: 22vw;
   align-items: start;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 8px 0px 0px 8px;
 }
 
 .library-head {
@@ -39,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   color: #dadada;
